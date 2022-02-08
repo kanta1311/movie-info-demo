@@ -1,0 +1,14 @@
+
+<app-header [title]="this.selectedMovie?.title" ></app-header>
+<table border="0" width="80%" align="center">
+  <tr>
+    <td>
+      <app-movie-details [movie]="selectedMovie"> </app-movie-details>
+    </td>
+    <td>
+      <app-movie-list [movieListData]="movieListData" (movieItemSelectedEvent)="onMovieSelected($event)">
+      </app-movie-list>
+    </td>
+  </tr>
+</table>
+

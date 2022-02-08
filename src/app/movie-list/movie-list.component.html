@@ -1,0 +1,4 @@
+<div *ngFor="let movie of movieListData" (click)="onClick(movie)">
+  <app-list-item [text]="movie.title" [selected]="selectedId == movie.id">
+  </app-list-item>
+</div>
